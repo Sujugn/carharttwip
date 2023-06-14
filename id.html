@@ -1,0 +1,96 @@
+<!DOCTYPE html><html lang="ko"><head><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>아이디 찾기</title><script type="module">
+        import logBox from  '../main.js'
+        document.addEventListener('DOMContentLoaded', ()=>{
+
+            const mobile01 = document.getElementById('mobile_01')
+            const mobile02 = document.getElementById('mobile_02')
+            const mobile03 = document.getElementById('mobile_03')
+
+            mobile01.addEventListener('keyup', telmove01)
+            mobile02.addEventListener('keyup', telmove02)
+
+            function telmove01(){
+                if(mobile01.value.length === 3){
+                    mobile02.focus()
+                }}
+
+            function telmove02(){
+                if(mobile02.value.length === 4){
+                    mobile03.focus()
+                }}
+                //휴대전화
+
+                
+
+            const resultArea = document.querySelector('.result_area')
+            const resultArea02 = document.querySelector('.result_area_02')
+            const tab01 = document.querySelector('.name_chk')
+            const tab02 = document.querySelector('.email_chk')
+
+
+            tab01.addEventListener('click', function(){
+                resultArea.style.display="block"
+                resultArea02.style.display="none"
+            })
+
+            tab02.addEventListener('click', function(){
+                resultArea.style.display="none"
+                resultArea02.style.display="block"
+            })
+            //radio 탭
+
+
+
+            const chkBtn = document.querySelector('.chk_btn')
+
+            chkBtn.addEventListener('click', function(){
+                let inputName = document.querySelector('.user_name').value
+                let inputTel = mobile01.value + mobile02.value + mobile03.value
+
+                for (let i = 0; i < logBox.length; i++) {
+                    
+                    if(inputName == '' || inputTel.length != 11){
+                        alert('정보를 올바르게 입력해주세요!')
+                        break;
+                    }
+                    
+                    if(inputName === logBox[i].name && inputTel === logBox[i].num){
+                        alert('아이디를 메세지로 발송했습니다.')
+                        break
+                    }
+
+                    if (i == logBox.length-1) alert('존재하지 않는 회원입니다.')
+                } 
+            }) //휴대전화 아이디 찾기 
+
+
+
+            const chkBtn02 = document.querySelector('.chk_btn_02')
+
+            chkBtn02.addEventListener('click', function(){
+                let inputEmail = document.querySelector('.user_email').value
+                let inputName = document.querySelector('.user_name_02').value
+                for(let i=0; i <logBox.length; i++) {
+                    if(inputName == '' || inputEmail == ''){
+                        alert('정보를 올바르게 입력해주세요!')
+                        break;
+                    }
+
+                    if(inputName == logBox[i].name && inputEmail == logBox[i].email){
+                        alert("이메일을 발송하였습니다. 확인해주세요")
+                        break;
+                    }
+
+                    if (i == logBox.length-1) alert('존재하지 않는 회원입니다.')
+                }//for
+
+    
+
+
+            }) //이메일로 아이디 찾기 
+
+            
+        
+
+        }) //addEventListener
+    </script><style>*{margin:0;padding:0}body{color:#1e1e1e}li{list-style:none}button{width:60px;border:none;height:40px;text-align:center}h2{font-size:15px}input{border:none;accent-color:#000}.container{width:580px;margin:0 auto}.container .content{margin:100px 80px 0}.container .content .title_box{padding-bottom:8px;border-bottom:2px solid #1e1e1e}.container .content .find_box{width:100%;margin-top:24px;padding-top:8px}.container .content .find_box button{display:block;margin:30px auto;background:#1e1e1e;color:#fff;font-size:12px}.container .content .find_box .name_area{margin-top:20px;font-size:13px}.container .content .find_box .name_area input{width:100%;border-bottom:1px solid #e5e5e5}.container .content .find_box .tel_area{margin-top:24px;font-size:13px}.container .content .find_box .tel_area .tel_wrap .number .option_btn{border:none}.container .content .find_box .tel_area .tel_wrap .number p{display:inline-block;width:50px;text-align:center}.container .content .find_box .tel_area .tel_wrap .number input{width:100px}.container .content .find_box .result_area_02 input{border-bottom:1px solid #e5e5e5;width:100%}.container .content .find_box .result_area_02{display:none}.container .content .find_box .chk_box{font-size:13px}</style></head><body> <div class="container"> <div class="content"> <div class="title_box"> <h2>아이디 찾기</h2> </div> <div class="find_box"> <div class="chk_box"> <label for="tab01" name="tab" class="contentType">휴대폰 번호</label> <input type="radio" id="tab01" name="tab" class="name_chk" checked> <label for="tab02" name="tab" class="contentType">이메일</label> <input type="radio" id="tab02" name="tab" class="email_chk"> </div> <div class="result_area"> <div class="name_area"> <p>이름</p> <input type="text" name="user_name" id="user_name" class="user_name"> </div> <div class="tel_area"> <p>휴대폰번호</p> <div class="tel_wrap"> <div class="number"> <input type="text" id="mobile_01" name="mobile_01" maxlength="3"> <p>-</p> <input type="text" id="mobile_02" name="mobile_02" maxlength="4"> <p>-</p> <input type="text" id="mobile_03" name="mobile_03" maxlength="4"> </div> </div> </div> <button class="chk_btn">확인</button> </div> <div class="result_area_02"> <div class="name_area"> <p>이름</p> <input type="text" name="user_name" id="user_name_02" class="user_name_02"> </div> <div class="tel_area"> <p>이메일</p> <div class="email_wrap"> <div class="email"> <input type="text" id="user_email" name="user_email" class="user_email"> </div> </div> </div> <button class="chk_btn_02">확인</button> </div>  </div> </div> </div> </body></html>
