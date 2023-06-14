@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인 메인 페이지</title>
+    <link rel="stylesheet" href="/main.1f19ae8e.js">
+    <script type="module">
+        import logBox from './js/login.js'
+        document.addEventListener('DOMContentLoaded',function(){
+            const userId = document.getElementById('user_id')
+            const userPw = document.getElementById('user_pw')
+            const clickBtn = document.querySelector('.click_btn')
+
+            clickBtn.addEventListener('click', ()=>{
+                for( let i = 0; i<logBox.length; i++){
+                    const logBoxId = logBox[i].id
+                    const logBoxPw = logBox[i].pw
+                    if(userId.value == logBoxId && userPw.value == logBoxPw){
+                        alert('로그인완료되었습니다.')
+                        return
+                    }else if(userId.value != logBoxId && userPw.value == logBoxPw){
+                        alert('아이디를 찾을 수 없습니다.')
+                        return
+                    }else if(userId.value == logBoxId && userPw.value != logBoxPw){
+                        alert('비밀번호가 일치하지 않습니다.')
+                    }else{
+                        alert('아이디/비밀번호를 입력해주세요.')
+                    }
+                } //for               
+            })
+        })
+    </script>
+
+
+<style>@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Urbanist:wght@400;500;600&display=swap');
+/* //font : Urbanist */
+
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+/* //font : 프리텐다드 */
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+body {
+
+    font-size: 14px;
+}
+
+
+button {
+    background-color: #1e1e1e;
+    color: white;
+    height: 40px;
+    width: calc(100%/2 - 5px);
+    cursor: pointer;
+}
+
+input {
+    width: 100%;
+    border: none;
+    border-bottom: 1px solid #E5E5E5;
+    height: 35px;
+    line-height: 35px;
+
+}
+
+.container {
+    /* padding-top: 193px; */
+    padding-top: 163px;
+    width: 580px;
+    margin: 0 auto;
+}
+
+.container .logo{
+    width: 260px;
+    margin: 0 auto;
+}
+
+.container .logo img{
+    width: 100%; height: 100%;
+}
+
+
+.contents .login .login_title {
+    font-family: 'Roboto Condensed', sans-serif;
+    font-family: 'Urbanist', sans-serif;
+    font-weight: 400;
+    margin: 30px 0;
+}
+
+.contents .login .login_box p {
+    margin-top: 15px;
+}
+
+
+.contents .login .btn_box {
+    display: flex;
+    margin: 55px 0 10px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.contents .login .btn_box button:nth-child(2) {
+    background-color: white;
+    color: black;
+    border: 1px solid #A7A7A7;
+    ;
+}
+
+.contents .login .btn_box .click_btn{
+    transition: all 0.3s;
+}
+
+.contents .login .btn_box .click_btn:hover{
+    background-color: white;
+    color: #1e1e1e;
+    border: 1px solid #1e1e1e;
+}
+
+.contents .login .btn_box .join_btn{
+    transition: all 0.3s;
+}
+
+.contents .login .btn_box .join_btn:hover{
+    background-color: #1e1e1e;
+    color: white;
+}
+
+.contents .login ul {
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}
+
+.contents .login ul li a {
+    color: black;
+}
+
+
+.contents .login .sns_login {
+    margin-top: 10px;
+    text-align: center;
+}
+
+.contents .login .sns_login p {
+    margin-top: 15px;
+    margin-bottom: 10px;
+    font-size: 14PX;
+    color: black;
+    font-family: 'Pretendard-Regular';
+}
+
+.contents .login .sns_login .sns_box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contents .login .sns_login .sns_box li {
+    width: 40px;
+    height: 40px;
+    margin: 10px 20px;
+
+}
+
+.contents .login .sns_login .sns_box li a img {
+    /* width: 40px; height: 40px; */
+    width: 100%;
+    height: 100%;
+}</style>
+
+
+
+<script src="/id.js"></script></head>
+
+<body>
+    <div class="container">
+        <div class="logo">
+            <a href="/index.html"><img src="/icon_01.56e942a1.png" alt="로고이미지"></a>
+        </div>
+        <div class="contents">
+            <div class="login">
+                <div class="login_title">
+                    <h2>LOGIN</h2>
+                </div>
+
+                <form action="" id="member_form">
+                    <div class="login_box">
+                        <p>아이디</p>
+                        <input type="text" name="user_id" id="user_id" class="user_id">
+                        <p>비밀번호</p>
+                        <input type="text" name="user_pw" id="user_pw" class="user_pw">
+                    </div><!-- //login_box -->
+
+                    <div class="btn_box">
+                        <button class="click_btn">로그인</button>
+                        <button class="join_btn" onclick="window.open('./join_page.html')">회원가입</button>
+
+                    </div><!-- //btn_box -->
+
+
+                    <ul>
+                        <li><a href="/id.html">아이디찾기</a></li>
+                        <li><a href="/pw.html">비밀번호 찾기</a></li>
+                    </ul>
+
+                    <div class="sns_login">
+                            <p>SNS 계정 로그인</p>
+                        <ul class="sns_box">
+                            <li><a href=""><img src="/naver_icon.6e1572ec.png" alt="네이버로그인"></a></li>
+                            <li><a href=""><img src="/kakao_icon.1aff3675.png" alt="카카오로그인"></a></li>
+                            <li><a href=""><img src="/apple_icon.daee964a.png" alt="애플로그인"></a></li>
+                        </ul>
+                    </div><!-- //sns_login -->
+                </form>
+
+            </div><!-- //login -->
+        </div><!-- //contents -->
+    </div><!-- //container -->
+
+
+
+
+
+
+</body>
+
+</html>

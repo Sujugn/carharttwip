@@ -1,0 +1,9 @@
+페이지네이션
+
+https://nohack.tistory.com/125
+https://velog.io/@eunoia/JS%EB%A1%9C-Pagination-%EA%B5%AC%ED%98%84%ED%95%98%EA%B8%B0
+
+아이콘site
+https://ionic.io/ionicons
+https://icon-icons.com/ko/%EC%88%98%EC%83%89/%EC%95%84%EC%9D%B4%EC%BD%98/?filtro=check&sort=popular
+http://www.designstudiom.co.kr/freedate01/?q=YToxOntzOjEyOiJrZXl3b3JkX3R5cGUiO3M6MzoiYWxsIjt9&bmode=view&idx=2271317&t=board

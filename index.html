@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>메인페이지</title>
+    <link rel="stylesheet" href="./css/main.scss">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <!--  gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script>
+
+    <!--     swiper cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+
+    <!--     fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+
+    <!--     remixicon cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+
+
+    <!--     jquery cdn -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+
+    <include src="./header.html"></include>
+
+    <div class="visual_main_outer">
+        <div class="visual_swiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="visual_textbox">
+                        <div class="visual_text">
+                            <h2>Slide1</h2>
+                            <p>설명</p>
+                        </div>
+                        <div class="visual_btn">
+                            <button>보러가기</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="visual_textbox">
+                        <div class="visual_text">
+                            <h2>Slide2</h2>
+                            <p>설명</p>
+                        </div>
+                        <div class="visual_btn">
+                            <button>보러가기</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-slide">
+                    <div class="visual_text">
+                        <div class="visual_textbox">
+                            <div class="visual_text">
+                                <h2>Slide3</h2>
+                                <p>설명</p>
+                            </div>
+                            <div class="visual_btn">
+                                <button>보러가기</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div><!-- //visual_main -->
+
+        <div class="main_product best_product">
+            <div class="main_title">
+                <h2>Best Product</h2>
+            </div><!-- //main_title -->
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+
+                    <div class="swiper-slide best_goods" data-product-id="best_01">
+                        <P>Best 1</P>
+                        <div class="more">
+                            <p>S/S TAMAS
+                                <br />
+                                POCKET T-SHIRT</p>
+                            <button class="more_btn">보러 가기</button>
+                        </div>
+                        <img src="./images/best_01.jpg" alt="베스트01" class="best_img">
+                    </div><!-- //Best_01 -->
+
+                    <div class="swiper-slide best_goods" data-product-id="best_02">
+                        <P>Best 2</P>
+                        <div class="more">
+                            <p>S/S TAMAS
+                                <br />
+                                POCKET T-SHIRT</p>
+                            <button class="more_btn">보러 가기</button>
+                        </div>
+                        <!-- <img src="./images/best_02.jpg" alt="베스트02" class="best_img"> -->
+                    </div><!-- //Best_02 -->
+
+                    <div class="swiper-slide best_goods" data-product-id="best_03">
+                        <P>Best 3</P>
+                        <div class="more">
+                            <p>SINGLE KNEE
+                                <br />
+                                SHORT SMITH</p>
+                            <button class="more_btn">보러 가기</button>
+                        </div>
+                        <img src="./images/best_03.jpg" alt="베스트03" class="best_img">
+                    </div><!-- //Best_03 -->
+
+                    <div class="swiper-slide best_goods" data-product-id="best_04">
+                        <P>Best 4</P>
+                        <div class="more">
+                            <p>S/S TAMAS
+                                <br />
+                                POCKET T-SHIRT</p>
+                            <button class="more_btn">보러 가기</button>
+                        </div>
+                        <img src="./images/best_04.jpg" alt="베스트04" class="best_img">
+                    </div><!-- //Best_04 -->
+
+                    <div class="swiper-slide best_goods" data-product-id="best_05">
+                        <P>Best 5</P>
+                        <div class="more">
+                            <p>COASTAL JACKET</p>
+                            <button class="more_btn">보러 가기</button>
+                        </div>
+                        <img src="./images/best_05.jpg" alt="베스트05" class="best_img">
+                    </div><!-- //Best_05 -->
+
+                    <div class="swiper-slide best_goods" data-product-id="best_06">
+                        <P>Best 6</P>
+                        <div class="more">
+                            <p>ISLAND
+                                <br />
+                                SWIM TRUNKS
+                            </p>
+                            <button class="more_btn">보러 가기</button>
+                        </div>
+                        <img src="./images/best_06.jpg" alt="베스트06" class="best_img">
+                    </div><!-- //Best_06 -->
+
+                    <div class="swiper-slide best_goods" data-product-id="best_07">
+                        <P>Best 7</P>
+                        <div class="more">
+                            <p>COASTAL JACKET</p>
+                            <button class="more_btn">보러 가기</button>
+                        </div>
+                        <img src="./images/best_07.jpg" alt="베스트07" class="best_img">
+                    </div><!-- //Best_07 -->
+
+                    <div class="swiper-slide best_goods" data-product-id="best_08">
+                        <P>Best 8</P>
+                        <div class="more">
+                            <p>COLE CARGO
+                                <br />
+                                SHORT MORAGA
+                            </p>
+                            <button class="more_btn">보러 가기</button>
+                        </div>
+                        <img src="./images/best_08.jpg" alt="베스트08" class="best_img">
+                    </div><!-- //Best_08 -->
+
+                </div>
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div><!-- //BEST_product -->
+
+        <script>
+            // 각 상품 요소에 이벤트 리스너 추가
+            var productElements = document.querySelectorAll('.best_goods');
+            productElements.forEach(function (productElement) {
+                productElement.addEventListener('click', function () {
+                    var productId = productElement.dataset.productId;
+                    redirectToProductDetail(productId);
+                });
+            });
+
+            // 상세 페이지로 이동하는 함수
+            function redirectToProductDetail(productId) {
+                // 상세 페이지 URL 구성
+                var detailPageUrl = './detail.html' + '?productId=' + productId;
+
+                // 상세 페이지로 이동
+                window.location.href = detailPageUrl;
+            }
+        </script>
+
+
+        <div class="main_product best_product">
+            <div class="main_title">
+                <h2>NEW Product</h2>
+            </div><!-- //main_title -->
+            <!-- Slider main container -->
+            <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide">
+                        <div class="more">
+                            <p>S/S WYNTON SHIRT
+                                <br />
+                                AMALFI STONE WASHED</p>
+                            <button class="more_btn">보러 가기</button>
+                        </div>
+                        <img src="./images/new_01.jpg" alt="뉴01">
+                    </div><!-- //new_01 -->
+                    <div class="swiper-slide">
+                        <div class="more">
+                            <p>WYNTON SHORT COOSA<br /> SHORT COOSA</p>
+                            <button class="more_btn">보러 가기</button>
+                        </div>
+                        <img src="./images/new_02.jpg" alt="뉴02">
+                    </div><!-- //new_02 -->
+                    <div class="swiper-slide">
+                        <div class="more">
+                            <p>BAYFIELD <br />BUCKET HAT</p>
+                            <button class="more_btn">보러 가기</button>
+                        </div>
+                        <img src="./images/new_03.jpg" alt="뉴03">
+                    </div><!-- //new_03 -->
+                    <div class="swiper-slide">
+                        <div class="more">
+                            <p>ROUND <br />CARABINER</p>
+                            <button class="more_btn">보러 가기</button>
+                        </div>
+                        <img src="./images/new_04.jpg" alt="뉴04">
+                    </div><!-- //new_04 -->
+                    <div class="swiper-slide">
+                        <div class="more">
+                            <p>CANVAS <br /> 6-PANEL CAP</p>
+                            <button class="more_btn">보러 가기</button>
+                        </div>
+                        <img src="./images/new_05.jpg" alt="뉴05">
+                    </div><!-- //new_05 -->
+                    <div class="swiper-slide">
+                        <div class="more">
+                            <p>BAYFIELD <br />TOTE</p>
+                            <button class="more_btn">보러 가기</button>
+                        </div>
+                        <img src="./images/new_06.jpg" alt="뉴06">
+                    </div><!-- //new_06 -->
+                    <div class="swiper-slide">
+                        <div class="more">
+                            <p>W S/S LOVILIA SHIRT <br /> BLUE STONE WASHED</p>
+                            <button class="more_btn">보러 가기</button>
+                        </div>
+                        <img src="./images/new_07.jpg" alt="뉴07">
+                    </div><!-- //new_07 -->
+                    <div class="swiper-slide">
+                        <div class="more">
+                            <p>W ALMA PANT <br /> BLUE STONE WASHED</p>
+                            <button class="more_btn">보러 가기</button>
+                        </div>
+                        <img src="./images/new_08.jpg" alt="뉴08">
+                    </div><!-- //new_08 -->
+                </div>
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+            </div>
+        </div><!-- //NEW_product -->
+
+
+        <div class="lookbook">
+            <div class="lookbook_title">
+                <h2>LOOK BOOK - S/S 2023</h2>
+            </div>
+            <div class="lookbook_outer">
+                <div class="left_area">
+                    <div class="lookbook_img lookbook_content">
+                        <img src="./images/lookbook_01.jpg" alt="룩북01">
+                    </div>
+                </div><!-- //left_area -->
+                <div class="right_area">
+                    <div class="lookbook_video lookbook_content">
+                        <iframe width="615" height="300"
+                            src="https://www.youtube.com/embed/LM--AwPkl8I?mute=1&autoplay=1&start=3&controls=0"
+                            title="YouTube video player" frameborder="0"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                            allowfullscreen></iframe>
+                    </div>
+                    <div class="img_outer">
+                        <div class="lookbook_img look_01 lookbook_content">
+                            <!-- <img src="./images/lookbook_02.jpg" alt="lookbook_02"> -->
+                        </div>
+                        <div class="lookbook_img look_02 lookbook_content">
+                            <!-- <img src="./images/lookbook_02.jpg" alt="lookbook_03"> -->
+                        </div>
+                    </div><!-- //img_outer -->
+                </div><!-- //right_area -->
+
+                <div class="change_area">
+                    <div class="tab_content">
+                        <img src="./images/tab_menu.jpg" alt="탭메뉴원본">
+                    </div><!-- //tab_content -->
+
+                    <div class="tab_shirt">
+                        <img src="./images/look_shirt.jpg" alt="셔츠">
+                    </div><!-- //셔츠 -->
+
+                    <div class="tab_pants">
+                        <img src="./images/look_pants.jpg" alt="바지">
+                    </div><!-- //바지 -->
+
+                    <div class="tab_cap">
+                        <img src="./images/look_cap.jpg" alt="모자">
+                    </div><!-- //모자 -->
+
+                    <div class="tab_bag">
+                        <img src="./images/look_cap.jpg" alt="가방">
+                    </div><!-- //가방 -->
+                </div><!-- //change_area -->
+
+            </div><!-- //lookbook_outer -->
+        </div><!-- //LOOKBOOK -->
+
+        <div class="md_pick">
+            <div class="md_pick_title">
+                <h2>MD'S PICK</h2>
+            </div>
+            <div class="md_pick_outer">
+                <div id="md_01" class="md_content md_01">
+                    <img src="./images/md_01.jpg" alt="md_pick_01">
+                    <div class="md_content_text md_text_01">
+                        <p>COASTAL
+                            <br />
+                            JACKET
+                            <br />
+                            ₩ 248,000
+                        </p>
+                        <button class="md_more_btn">보러 가기</button>
+                    </div>
+                </div><!-- //md_content -->
+                <div id="md_02" class="md_content md_02">
+                    <img src="./images/md_02.jpg" alt="md_pick_02">
+                    <div class="md_content_text">
+                        <p>NELSON SWEATSHIRT
+                            <br />
+                            ₩ 130,400
+                        </p>
+                        <button class="md_more_btn">보러 가기</button>
+                    </div>
+                </div><!-- //md_content -->
+                <div id="md_03" class="md_content md_03">
+                    <img src="./images/md_03.jpg" alt="md_pick_03">
+                    <div class="md_content_text">
+                        <p>SHORT WATCH HAT
+                            <br />
+                            ₩ 30,400
+                        </p>
+                        <button class="md_more_btn">보러 가기</button>
+                    </div>
+                </div><!-- //md_content -->
+                <div id="md_04" class="md_content md_04">
+                    <img src="./images/md_04.jpg" alt="md_pick_04">
+                    <div class="md_content_text">
+                        <p>SKYLER LINER
+                            <br />
+                            ₩ 194,400
+                        </p>
+                        <button class="md_more_btn">보러 가기</button>
+                    </div>
+
+                </div><!-- //md_content -->
+            </div>
+        </div><!-- //md_pick -->
+
+
+        <div class="instagram">
+            <div class="insta_title">
+                <h2>INSTAGRAM</h2>
+            </div>
+            <div class="insta_outer">
+                <div class="content">
+                    <a href="">
+                        <img src="./images/insta_01.jpg" alt="인스타01">
+                    </a>
+                </div>
+                <div class="content">
+                    <a href="">
+                        <img src="./images/insta_02.jpg" alt="인스타02">
+                    </a>
+                </div>
+                <div class="content">
+                    <a href="">
+                        <img src="./images/insta_03.jpg" alt="인스타03">
+                    </a>
+                </div>
+                <div class="content">
+                    <a href="">
+                        <img src="./images/insta_04.jpg" alt="인스타05">
+                    </a>
+                </div>
+            </div>
+        </div><!-- //instagram -->
+
+        <div class="top_btn">
+            TOP
+        </div>
+
+        <include src="./footer.html"></include>
+
+
+
+
+        <script>
+            var swiper = new Swiper(".visual_swiper", {
+                spaceBetween: 70,
+                effect: "fade",
+                navigation: {
+                    nextEl: ".swiper-button-next",
+                    prevEl: ".swiper-button-prev",
+                },
+                pagination: {
+                    el: ".swiper-pagination",
+                    clickable: true,
+                },
+            });
+        </script>
+
+        <script>
+            // Swiper 초기화
+            var swiper = new Swiper('.swiper-container', {
+                // 설정 옵션들...
+            });
+
+            // 텍스트 네비게이션 추가 함수
+            function addNavigationText() {
+                var navigationBullets = document.querySelectorAll('.swiper-pagination-bullet');
+
+                navigationBullets.forEach(function (bullet, index) {
+                    var textElement = document.createElement('span');
+                    textElement.className = 'swiper-pagination-text';
+                    textElement.textContent = 'Slide ' + (index + 1);
+
+                    bullet.appendChild(textElement);
+                });
+            }
+
+            // 텍스트 네비게이션 추가 호출
+            addNavigationText();
+            //swiper 텍스트 넣기
+        </script>
+
+        <script>
+            const swiper = new Swiper('.swiper', {
+                slidesPerView: 4,
+                spaceBetween: 15,
+                navigation: {
+                    prevEl: '.swiper-button-prev',
+                    nextEl: '.swiper-button-next'
+                }
+            }) //BEST,NEW swiper
+        </script>
+
+        <script>
+            document.addEventListener('DOMContentLoaded', function () {
+                const mdContent = document.querySelectorAll('.md_content');
+                mdContent.forEach((value) => {
+                    value.addEventListener('mouseover', function () {
+                        mdContent.forEach((content) => {
+                            content.style.width = '200px';
+                            content.querySelector('.md_content_text').style.display =
+                                'none';
+                            content.style.backgroundImage = ''; // 초기화: 배경 이미지 없음
+                        });
+
+                        value.style.width = '615px';
+                        value.querySelector('.md_content_text').style.display = 'block';
+
+                        const id = value.id;
+                        switch (id) {
+                            case 'md_01':
+                                value.style.backgroundImage = 'url(./images/md_01_hover.jpg)';
+                                break;
+                            case 'md_02':
+                                value.style.backgroundImage = 'url(./images/md_02_hover.jpg)';
+                                break;
+                            case 'md_03':
+                                value.style.backgroundImage = 'url(./images/md_03_hover.jpg)';
+                                break;
+                                // 추가적인 ID에 따른 배경 이미지 설정
+                                // case 'md_04':
+                                //   value.style.backgroundImage = 'url(./images/md_04_hover.jpg)';
+                                //   break;
+                                // ...
+                            default:
+                                value.style.backgroundImage = ''; // 배경 이미지가 없는 경우 설정
+                                break;
+                        }
+                    });
+                });
+            }); //DOM
+
+
+
+            /* top_btn */
+
+            const topBtn = document.querySelector('.top_btn')
+
+            window.addEventListener('scroll', () => {
+                if (window.scrollY > 200) {
+                    gsap.to(topBtn, 0.3, {
+                        opacity: 1
+                    })
+                } else {
+                    gsap.to(topBtn, 0.3, {
+                        opacity: 0
+                    })
+                }
+            }) //window_scroll_event
+
+
+            topBtn.addEventListener('click', () => {
+                gsap.to(window, 0.5, {
+                    scrollTo: 0
+                })
+            }) // top버튼 누르면 상단으로 이동
+        </script>
+
+</body>
+
+</html>

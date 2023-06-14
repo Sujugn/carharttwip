@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" goods="IE=edge">
+    <meta name="viewport" goods="width=device-width, initial-scale=1.0">
+    <title>bottom</title>
+    <link rel="stylesheet" href="./css/sub_page.scss">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+
+    <script src="./main.js"></script>
+    <script src="./js/product_import.js" defer></script>
+
+    <!--  gsap -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollToPlugin.min.js"></script>
+
+    <!--     fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+
+    <!--     remixicon cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.2.0/fonts/remixicon.css" rel="stylesheet">
+</head>
+
+<body>
+    
+    <include src="./header.html"></include>
+    
+
+
+    <div class="visual_main">
+        <div class="visual_main_outer">
+            <div class="visual_img"></div>
+            <div class="visual_txt">
+                <h2>visual_sub</h2>
+            </div>
+        </div><!-- //visual_main_outer -->
+    </div><!-- //visual_main -->
+
+    <div class="wrap_ex">
+        <div class="wrap">
+            <div class="sub_menu_ex">
+                <div class="title">
+                    <p>TOP</p>
+                </div>
+                <ul class="sub_menu">
+                    <li><a href="">전체</a></li>
+                    <li><a href="">자켓</a></li>
+                    <li><a href="">스웨터</a></li>
+                    <li><a href="">니트</a></li>
+                    <li><a href="">셔츠</a></li>
+                    <li><a href="">티셔츠</a></li>
+                </ul>
+
+                <div class="filter_area">
+                    <div class="filter_price filter_outer">
+                        <div class="filter_title">
+                            <p>가격</p>
+                        </div>
+                        <div class="filter_inner">
+                            <label for="price_filter">
+                                <input type="checkbox" id="price_filter">0원~50,000원
+                            </label>
+                            <label for="price_filter_02">
+                                <input type="checkbox" id="price_filter_02">50,000원~150,000원
+                            </label>
+                            <label for="price_filter_03">
+                                <input type="checkbox" id="price_filter_03">150,000원~250,000원
+                            </label>
+                            <label for="price_filter_04">
+                                <input type="checkbox" id="price_filter_04">250,000원~500,000원
+                            </label>
+                            <label for="price_filter_05">
+                                <input type="checkbox" id="price_filter_05">500,000원
+                            </label>
+                        </div><!-- //filter_inner -->
+                    </div><!-- //filter_price -->
+
+                    <div class="filter_color filter_outer">
+                        <div class="filter_title">
+                            <p>색상</p>
+                        </div>
+                        <div class="filter_inner">
+                            <button>
+                                <div class="color_black color_filter"></div>
+                            </button>
+                            <button>
+                                <div class="color_white color_filter"></div>
+                            </button>
+                            <button>
+                                <div class="color_blue color_filter"></div>
+                            </button>
+                            <button>
+                                <div class="color_red color_filter"></div>
+                            </button>
+                            <button>
+                                <div class="color_yellow color_filter"></div>
+                            </button>
+                            <button>
+                                <div class="color_brown color_filter"></div>
+                            </button>
+                            <button>
+                                <div class="color_purple color_filter"></div>
+                            </button>
+                            <button>
+                                <div class="color_gray color_filter"></div>
+                            </button>
+                            <button>
+                                <div class="color_pink color_filter"></div>
+                            </button>
+                            <button>
+                                <div class="color_darkbrown color_filter"></div>
+                            </button>
+                            <button>
+                                <div class="color_beige color_filter"></div>
+                            </button>
+                            <button>
+                                <div class="color_orange color_filter"></div>
+                            </button>
+                            <button>
+                                <div class="color_navy color_filter"></div>
+                            </button>
+                        </div><!-- //filter_inner -->
+                    </div><!-- //filter_color -->
+
+                    <div class="filter_sale filter_outer">
+                        <div class="filter_title">
+                            <p>할인율</p>
+                        </div>
+                        <div class="filter_inner">
+                            <label for="sale_filter">
+                                <input type="checkbox" id="sale_filter">0%~30%
+                            </label>
+                            <label for="sale_filter_02">
+                                <input type="checkbox" id="sale_filter_02">30%~50%
+                            </label>
+                            <label for="sale_filter_03">
+                                <input type="checkbox" id="sale_filter_03">50%~70%
+                            </label>
+                            <label for="sale_filter_04">
+                                <input type="checkbox" id="sale_filter_04">70%이상
+                            </label>
+                        </div>
+                    </div><!-- //filter_sale -->
+                </div><!-- //filter_area -->
+
+            </div><!-- //sub_menu_ex -->
+
+            <div class="goods_area">
+                <div class="filter_outer">
+                    <div class="genderbox">
+                        <ul>
+                            <li><a href="">남자</a></li>
+                            <li><a href="">여자</a></li>
+                            <li><a href="">All</a></li>
+                        </ul>
+                    </div><!-- //genderbox -->
+
+                    <div class="checkbox">
+                        <label class="list_checkbox">
+                            <input type="checkbox" value="">품절상품 제외</label>
+                        <select class="selectbox">
+                            <option>신상품순</option>
+                            <option>인기순</option>
+                            <option>가격순</option>
+                        </select>
+                        <div class="filter_key">
+                            <p>필터</p>
+                            <button class="filter_btn">
+                                ON
+                            </button>
+                        </div><!-- //filter_btn -->
+                    </div><!-- //checkbox -->
+                </div><!-- //filter_outer -->
+
+                <div class="goods_outer">
+                </div><!-- //goods_outer -->
+
+            </div><!-- //goods_area -->
+
+
+        </div><!-- //wrap -->
+
+        <div class="page">
+            <ul class="pagination">
+                <li><a href="" class="first"><i class="fas fa-angle-double-left"></i></i></a></li>
+                <li><a href="" class="arrow_left"><i class="fas fa-angle-left"></i></i></a></li>
+                <li><a href="" class="active_num">1</a></li>
+                <li><a href="">2</a></li>
+                <li><a href="">3</a></li>
+                <li><a href="">4</a></li>
+                <li><a href="" class="arrow_right"><i class="fas fa-angle-right"></i></a></li>
+                <li><a href="" class="last"><i class="fas fa-angle-double-right"></i></a></li>
+            </ul>
+        </div><!-- //page -->
+    </div><!-- //wrap_ex -->
+
+
+    <div class="top_btn">
+        TOP
+    </div>
+
+    <include src="./footer.html"></include>
+    
+
+
+    <!-- <script>
+        const itemsPerPage = 5; // 페이지당 표시할 아이템 수
+        let currentPage = 1; // 현재 페이지
+
+        // 전체 아이템 배열 (예시)
+        const allItems = [{
+                id: 1,
+                name: "Item 1"
+            },
+            {
+                id: 2,
+                name: "Item 2"
+            },
+            {
+                id: 3,
+                name: "Item 3"
+            },
+            {
+                id: 4,
+                name: "Item 4"
+            },
+            {
+                id: 5,
+                name: "Item 5"
+            },
+            {
+                id: 6,
+                name: "Item 6"
+            },
+            {
+                id: 7,
+                name: "Item 7"
+            },
+            {
+                id: 8,
+                name: "Item 8"
+            },
+            {
+                id: 9,
+                name: "Item 9"
+            },
+            {
+                id: 10,
+                name: "Item 10"
+            },
+            // ... 추가적인 아이템들
+        ];
+
+        // 페이지네이션 요소
+        const paginationElement = document.querySelector(".pagination");
+
+        // 페이지 변경 함수
+        function changePage(page) {
+            currentPage = page;
+            displayItems();
+            updatePagination();
+        }
+
+        // 아이템 표시 함수
+        function displayItems() {
+            const startIndex = (currentPage - 1) * itemsPerPage;
+            const endIndex = startIndex + itemsPerPage;
+            const itemsToDisplay = allItems.slice(startIndex, endIndex);
+
+            // 표시된 아이템들을 출력하는 로직 작성
+            console.log(itemsToDisplay);
+        }
+
+        // 페이지네이션 업데이트 함수
+        function updatePagination() {
+            const totalPages = Math.ceil(allItems.length / itemsPerPage);
+
+            // 페이지네이션 요소 초기화
+            paginationElement.innerHTML = "";
+
+            // 이전 페이지 버튼 생성
+            const prevButton = document.createElement("button");
+            prevButton.textContent = "Previous";
+            prevButton.addEventListener("click", () => {
+                if (currentPage > 1) {
+                    changePage(currentPage - 1);
+                }
+            });
+            paginationElement.appendChild(prevButton);
+
+            // 페이지 버튼 생성
+            for (let page = 1; page <= totalPages; page++) {
+                const pageButton = document.createElement("button");
+                pageButton.textContent = page;
+                pageButton.addEventListener("click", () => {
+                    changePage(page);
+                });
+                paginationElement.appendChild(pageButton);
+            }
+
+            // 다음 페이지 버튼 생성
+            const nextButton = document.createElement("button");
+            nextButton.textContent = "Next";
+            nextButton.addEventListener("click", () => {
+                if (currentPage < totalPages) {
+                    changePage(currentPage + 1);
+                }
+            });
+            paginationElement.appendChild(nextButton);
+        }
+
+        // 초기 페이지 표시
+        displayItems();
+        updatePagination();
+    </script> -->
+</body>
+
+</html>

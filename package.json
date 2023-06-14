@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "carhartt": "file:",
+    "parcel-bundler": "^1.12.5",
+    "posthtml": "^0.16.6"
+  },
+  "name": "carhartt",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {
+    "posthtml-doctype": "^1.1.1",
+    "posthtml-include": "^1.7.4",
+    "sass": "^1.62.1"
+  },
+  "scripts": {
+    "dev": "parcel index.html",
+    "build": "parcel build index.html"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
